@@ -5,18 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablica</title>
 </head>
+<style>
+    table {
+    border: 3px solid black;
+}
+th {
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+</style>
 <body>
     <table style="border: 1px solid black;">
         <caption> Table with Rowspan and Colspan"</caption>
+
         <tr>
             <td colspan="2">Name</td>
             <td>Class</td>
             <td colspan="2">School</td>
         </tr>
-        <td>Mahmia</td>
-        <td>Grupa</td>
-
-        <td colspan="2">MVM School</td>
+        <tr>
+        <td rowspan="2">Mahmia</td>
+        <td rowspan="2">Grupa</td>
+        <td>11</td>
+        <td rowspan="2">MVM School</td>
+        </tr>
+        <tr>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Sri</td>
+            <td rowspan="2">Kirhin</td>
+            <td>3</td>
+            <td rowspan="2">LMS School</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Shivka</td>
+                <td rowspan="2">Goyal</td>
+                <td>5</td>
+                <td rowspan="2">SCPM School</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                </tr>
 
 
     </table>
